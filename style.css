@@ -34,6 +34,12 @@ header {
     padding: 10px 0;
 }
 
+a {
+    color: #fafafa;
+    font-size: 16px;
+    text-decoration: none;
+}
+
 /* main-visual */
 .main-visual {
     width: 100%;
@@ -112,7 +118,7 @@ header {
     width: 300px;
     height: 250px;
     background-position: center;
-    margin: 10px 0 0 10px;;
+    margin: 10px 0 0 10px;
 }
 
 .portfolio-img3 {
@@ -186,7 +192,8 @@ header {
 
 .strength-box {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: center;
 }
 
@@ -306,6 +313,7 @@ footer {
 
 .footer-text {
     color: #fafafa;
+    font-size: 16px;
 }
 
 /* レスポンシブ対応 */
@@ -317,6 +325,46 @@ footer {
 
   .main-visual {
       background-image: url(img/code.png);
+      width: 100%;
+      height: 650px;
+  }
+
+  .main-text {
+     font-size: 40px;
+     color: #fafafa;
+     margin-bottom: 10px;
+  }
+
+  .main-name {
+      font-size: 18px;
+      color: #fafafa;
+  }
+
+  .text {
+     font-size: 32px;
+  }
+
+  .name {
+      font-size: 16px;
+  }
+
+ 
+  .portfolio-box {
+      flex-direction: column;
+      align-items: center;
+  }
+
+
+  .portfolio-img1{
+      display: none;
+  }
+
+  .portfolio-img3 {
+      display: none;
+  }
+
+  .portfolio-img5 {
+      display: none;
   }
 
   .profile-bottom {
@@ -327,8 +375,25 @@ footer {
       text-align: center;
   }
 
+  .strength-box {
+      flex-direction: column;
+      align-items: center;
+  }
+
   .contact-bottom {
       flex-direction: column;
       text-align: center;
   }
+
+  .sns i {
+    margin-right: 8px;
+ }
+
+ footer {
+     height: 60px;
+ }
+
+ .footer-text {
+     font-size: 16px;
+ }
 }
