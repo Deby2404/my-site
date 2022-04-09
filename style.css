@@ -197,6 +197,17 @@ header {
     margin: 10px;
 }
 
+icon::after {
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 900;
+  display: inline-block;
+  content: "\f640";
+}
+
+.icon {
+    font-size: 60px;
+}
+
 .strength-name {
     font-size: 20px;
     color: #000000;
@@ -280,7 +291,8 @@ img {
 }
 
 .sns i {
-
+   font-size: 50px;
+   margin-right: 20px;
 }
 
 
