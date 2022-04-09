@@ -45,12 +45,12 @@ header {
     padding-top: 200px;
 }
 
-.main-visual-text {
+.main-text {
     font-size: 64px;
     color: #fafafa;
 }
 
-.main-visual-name {
+.main-name {
     font-size: 20px;
     color: #fafafa;
     margin-top: 10px;
@@ -63,14 +63,14 @@ header {
     padding: 90px 0 90px 0;
 }
 
-.portfolio-text {
+.text {
     font-size: 32px;
     color: #000000;
     padding-bottom: 8px;
     position: relative;
 }
 
-.portfolio-text::after {
+.text::after {
     content: '';
     display: block;
     position: absolute;
@@ -83,7 +83,7 @@ header {
 }
 
 
-.portfolio-name {
+.name {
     font-size: 16px;
     color: #000000;
     margin-top: 30px;
@@ -158,14 +158,14 @@ header {
     padding: 90px 0 90px 0;
 }
 
-.feature-text {
+.text {
   font-size: 32px;
   color: #000000;
   position: relative;
   padding-bottom: 8px;
 }
 
-.feature-text::after {
+.text::after {
     content: '';
     display: block;
     position: absolute;
@@ -177,7 +177,7 @@ header {
     margin-top: 8px;
 }
 
-.feature-name {
+.name {
     font-size: 16px;
     color: #000000;
     margin-top: 30px;
@@ -214,33 +214,7 @@ header {
     background-color: #eceff1;
     text-align: center;
     padding: 90px 0 90px 0;
-}
-
-.profile-text {
-    font-size: 32px;
-    color: #000000;
-    padding-bottom: 8px;
-    position: relative;
-}
-
-.profile-text::after {
-    content: '';
-    display: block;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    width: 70px;
-    height: 3px;
-    background-color: #ec715f;
-    margin-top: 8px;
-}
-
-.profile-name {
-    font-size: 16px;
-    color: #000000;
-    margin-top: 30px;
-    text-align: center;
-    margin-bottom: 30px;
+    
 }
 
 img {
@@ -274,6 +248,41 @@ img {
     color: #000000;
 }
 
+/* contact */
+.contact {
+    background-color: #fff;
+    text-align: center;
+    padding: 90px 0 90px 0;
+    
+}
+
+.contact-bottom {
+    display: inline-flex;
+    justify-content: center;
+    text-align: start;
+}
+
+.contact-bottom h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.contact-bottom p {
+    margin-bottom: 20px;
+}
+
+.mail-tel {
+    width: 400px;
+}
+
+.sns {
+    width: 400px;
+}
+
+.sns i {
+
+}
+
 
 footer {
    width: 100%;
@@ -285,4 +294,29 @@ footer {
 
 .footer-text {
     color: #fafafa;
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 767px) {
+ 
+  header {
+      width: 100%;
+  }
+
+  .main-visual {
+      background-image: url(img/code.png);
+  }
+
+  .profile-bottom {
+      flex-direction: column;
+  }
+
+  .profile-ex {
+      text-align: center;
+  }
+
+  .contact-bottom {
+      flex-direction: column;
+      text-align: center;
+  }
 }
